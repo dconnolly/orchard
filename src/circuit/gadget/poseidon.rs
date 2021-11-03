@@ -60,6 +60,7 @@ pub trait PoseidonDuplexInstructions<
 }
 
 /// A word over which the Poseidon permutation operates.
+#[derive(Debug)]
 pub struct Word<
     F: FieldExt,
     PoseidonChip: PoseidonInstructions<F, S, T, RATE>,
